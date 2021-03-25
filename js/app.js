@@ -335,6 +335,10 @@ let input=document.getElementById("input");
 form.addEventListener("submit",e=>{
   e.preventDefault();
   let item=input.value;
+
+  let li=document.createElement("li");
+li.classList.add("list-group-item")
+
   console.log(item);
   lists.forEach(list=>{
     list.append(item);
